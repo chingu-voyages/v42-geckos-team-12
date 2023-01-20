@@ -1,0 +1,31 @@
+body {
+    background: url(sorting-hat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+  }
+  
+  .LandingPage__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .LandingPage__button {
+        width: 400px;
+        height: 200px;
+        color: white;
+        background: rgba(0, 0, 0, 0.8);
+        border: 5px solid;
+        border-color: white;
+        font-size: 20px;
+      }
+
+    .LandingPage__button:hover {
+        //background: rgba(0, 0, 0, 0.5);
+        background: url(sparklers-small.png);
+        cursor: pointer;
+    }
+  }
