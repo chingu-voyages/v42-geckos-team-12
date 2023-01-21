@@ -21,10 +21,10 @@ body {
         border: 5px solid;
         border-color: white;
         font-size: 20px;
+        font-weight: bold;
       }
 
     .LandingPage__button:hover {
-        //background: rgba(0, 0, 0, 0.5);
         background: url(sparklers-small.png);
         cursor: pointer;
     }
