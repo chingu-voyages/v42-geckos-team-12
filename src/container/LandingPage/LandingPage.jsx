@@ -1,6 +1,5 @@
 import React from "react";
 import "./LandingPage.scss"
-import { images } from "../../constants";
 
 export default function LandingPage() {
 
