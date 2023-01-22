@@ -1,6 +1,4 @@
-import "./App.css";
 import { useEffect, useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
 
 function Quiz() {
   const [answerA, setAnswerA] = useState(0);
