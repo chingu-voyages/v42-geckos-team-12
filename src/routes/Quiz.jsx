@@ -1,10 +1,8 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import { Routes, Route, Link, useParams } from "react-router-dom";
-import axios from "axios";
-import data from "./data";
+import { Routes, Route, Link } from "react-router-dom";
 
-function App() {
+function Quiz() {
   const [answerA, setAnswerA] = useState(0);
   const [answerB, setAnswerB] = useState(0);
   const [answerC, setAnswerC] = useState(0);
@@ -173,4 +171,4 @@ function App() {
   );
 }
 
-export default App;
+export default Quiz;
