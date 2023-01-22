@@ -10,6 +10,7 @@
     "head": "Minerva Mcgonagall",
     "ghost": "Nearly headless Nick"
   },
+
   {
     "id": 1,
     "name": "Slytherin",
@@ -21,6 +22,7 @@
     "head": "Severus Snape",
     "ghost": "Bloody Baron"
   },
+
   {
     "id": 2,
     "name": "Ravenclaw",

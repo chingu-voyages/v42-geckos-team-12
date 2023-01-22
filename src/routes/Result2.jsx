@@ -1,15 +1,23 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import data from "../data";
 
-function Result() {
-  const [dorms, setDorms] = useState(data);
+function Result2() {
+  const [dorms, setDorms] = useState([]);
 
-  console.log(dorms, "<<<<<<<<dorms");
+  useEffect(() => {
+    axios
+      .get(
+        `https://raw.githubusercontent.com/chingu-voyages/v42-geckos-team-12/main/src/api/result.json`
+      )
+      .then((result) => {
+        setDorms(result.data);
+        console.log(dorms, ">>>>>");
+      });
+  });
 
   return (
     <div>
-      <h1>호그와트</h1>
+      <h1>You are...</h1>
 
       <div>
         {dorms.map((dorm, index) => {
@@ -30,4 +38,4 @@ function Result() {
   );
 }
 
-export default Result;
+export default Result2;
