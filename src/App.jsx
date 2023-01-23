@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import "./App.css";
-import { React, useEffect, useState } from "react";
+import { React } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
 import LandingPage from "./container/LandingPage/LandingPage";
