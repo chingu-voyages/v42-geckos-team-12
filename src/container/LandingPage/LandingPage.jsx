@@ -12,7 +12,7 @@ export default function LandingPage() {
       <h1>Hogwarts House Mysteries</h1>
       <p>
         Which house would you belong to? You know we can't all be in Ravenclaw,
-        right? ;-)
+        right? ;-
       </p>
       <Link to={`/quiz`}>
         <button
