@@ -1,4 +1,10 @@
+Quiz.jsx
+
+
+
+
 import { useEffect, useState } from "react";
+import "../App.css";
 
 function Quiz() {
   const [answerA, setAnswerA] = useState(0);
@@ -122,7 +128,7 @@ function Quiz() {
   }
 
   return (
-    <div>
+    <div className="quiz-container">
       <form
         onSubmit={(event) => {
           event.preventDefault();
@@ -130,38 +136,60 @@ function Quiz() {
         }}
       >
         <h2>{questions[clickedNumber]}</h2>
-        <button
-          type="button"
-          onClick={() => {
-            setAnswerA(answerA + 1);
-          }}
-        >
-          A. {optionA[clickedNumber]}
-        </button>
-        <button
-          type="button"
-          onClick={() => {
-            setAnswerB(answerB + 1);
-          }}
-        >
-          B. {optionB[clickedNumber]}
-        </button>
-        <button
-          type="button"
-          onClick={() => {
-            setAnswerC(answerC + 1);
-          }}
-        >
-          C. {optionC[clickedNumber]}
-        </button>
-        <button
-          type="button"
-          onClick={() => {
-            setAnswerD(answerD + 1);
-          }}
-        >
-          D. {optionD[clickedNumber]}
-        </button>
+        {/* test buttons */}
+        <div>
+          <input
+            type="radio"
+            id="answerA"
+            value="answerA"
+            name="answer"
+            onClick={() => {
+              setAnswerA(answerA + 1);
+            }}
+          />
+          <label for="answerA">A. {optionA[clickedNumber]}</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="answerB"
+            value="answerB"
+            name="answer"
+            onClick={() => {
+              setAnswerB(answerB + 1);
+            }}
+          />
+          <label for="answerB">B. {optionB[clickedNumber]}</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="answerC"
+            value="answerC"
+            name="answer"
+            onClick={() => {
+              setAnswerC(answerC + 1);
+            }}
+          />
+          <label for="answerC">C. {optionC[clickedNumber]}</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="answerD"
+            value="answerD"
+            name="answer"
+            onClick={() => {
+              setAnswerD(answerD + 1);
+            }}
+          />
+          <label for="answerD">D. {optionD[clickedNumber]}</label>
+        </div>
+
+      
         {showNext === true ? <NextModal /> : null}
         {showSubmit === true ? <SubmitModal /> : null}
       </form>
@@ -170,3 +198,4 @@ function Quiz() {
 }
 
 export default Quiz;
+
