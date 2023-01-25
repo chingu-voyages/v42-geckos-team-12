@@ -1,6 +1,3 @@
-Quiz.jsx
-
-
 
 
 import { useEffect, useState } from "react";
