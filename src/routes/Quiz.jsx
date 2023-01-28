@@ -1,7 +1,6 @@
-
-
 import { useEffect, useState } from "react";
 import "../App.css";
+import "./Quiz.scss";
 
 function Quiz() {
   const [answerA, setAnswerA] = useState(0);
@@ -136,6 +135,7 @@ function Quiz() {
         {/* test buttons */}
         <div>
           <input
+            className="Quiz__radioButton"
             type="radio"
             id="answerA"
             value="answerA"
@@ -144,11 +144,12 @@ function Quiz() {
               setAnswerA(answerA + 1);
             }}
           />
-          <label for="answerA">A. {optionA[clickedNumber]}</label>
+          <label className="Quiz__radioButton-label" for="answerA">A. {optionA[clickedNumber]}</label>
         </div>
 
         <div>
           <input
+            className="Quiz__radioButton"
             type="radio"
             id="answerB"
             value="answerB"
@@ -157,11 +158,12 @@ function Quiz() {
               setAnswerB(answerB + 1);
             }}
           />
-          <label for="answerB">B. {optionB[clickedNumber]}</label>
+          <label className="Quiz__radioButton-label" for="answerB">B. {optionB[clickedNumber]}</label>
         </div>
 
         <div>
           <input
+            className="Quiz__radioButton"
             type="radio"
             id="answerC"
             value="answerC"
@@ -170,11 +172,12 @@ function Quiz() {
               setAnswerC(answerC + 1);
             }}
           />
-          <label for="answerC">C. {optionC[clickedNumber]}</label>
+          <label className="Quiz__radioButton-label" for="answerC">C. {optionC[clickedNumber]}</label>
         </div>
 
         <div>
           <input
+            className="Quiz__radioButton"
             type="radio"
             id="answerD"
             value="answerD"
@@ -183,7 +186,7 @@ function Quiz() {
               setAnswerD(answerD + 1);
             }}
           />
-          <label for="answerD">D. {optionD[clickedNumber]}</label>
+          <label className="Quiz__radioButton-label" for="answerD">D. {optionD[clickedNumber]}</label>
         </div>
 
       
