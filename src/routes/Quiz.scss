@@ -11,8 +11,15 @@
   margin-top: 20px;
 }
 
+.Quiz__radioButton {
+  border: 0px;
+  width: 20px;
+  height: 20px;
+}
+
 .Quiz__radioButton-label {
   padding-left: 0.8em;
+  font-size: 22px;
 }
 
 // Code as basis for the gradient button taken from https://stackdiary.com/gradient-hover-effect-css/
