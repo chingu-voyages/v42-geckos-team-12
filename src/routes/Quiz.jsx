@@ -91,7 +91,7 @@ function Quiz() {
   function SubmitModal() {
     return (
       <p>
-        <input type="submit" />
+        <input className="Quiz__gradientButton" type="submit" />
       </p>
     );
   }
@@ -100,6 +100,7 @@ function Quiz() {
     return (
       <p>
         <input
+          className="Quiz__gradientButton"
           type="button"
           value="Next"
           onClick={() => {

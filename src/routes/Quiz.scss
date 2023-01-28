@@ -2,3 +2,21 @@
     text-align: left;
     padding-left: 30%;
   }
+
+// Code as basis for the gradient button taken from https://stackdiary.com/gradient-hover-effect-css/
+.Quiz__gradientButton {
+  display: flex;
+  padding: 0.875em 2em;
+  background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+  font-family: inherit;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 2s;
+  place-content: center;
+}
+
+.Quiz__gradientButton:hover, .Quiz__gradientButton:focus {
+  background-color: #11ad0b;
+  color: #fff;
+}
