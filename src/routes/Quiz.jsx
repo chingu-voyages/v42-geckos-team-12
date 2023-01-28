@@ -132,9 +132,9 @@ function Quiz() {
           handleSubmit();
         }}
       >
-        <h2>{questions[clickedNumber]}</h2>
+        <h2 className="Quiz__question">{questions[clickedNumber]}</h2>
         {/* test buttons */}
-        <div>
+        <div className="Quiz__radioButtonContainer">
           <input
             className="Quiz__radioButton"
             type="radio"
@@ -148,7 +148,7 @@ function Quiz() {
           <label className="Quiz__radioButton-label" for="answerA">A. {optionA[clickedNumber]}</label>
         </div>
 
-        <div>
+        <div className="Quiz__radioButtonContainer">
           <input
             className="Quiz__radioButton"
             type="radio"
@@ -162,7 +162,7 @@ function Quiz() {
           <label className="Quiz__radioButton-label" for="answerB">B. {optionB[clickedNumber]}</label>
         </div>
 
-        <div>
+        <div className="Quiz__radioButtonContainer">
           <input
             className="Quiz__radioButton"
             type="radio"
@@ -176,7 +176,7 @@ function Quiz() {
           <label className="Quiz__radioButton-label" for="answerC">C. {optionC[clickedNumber]}</label>
         </div>
 
-        <div>
+        <div className="Quiz__radioButtonContainer">
           <input
             className="Quiz__radioButton"
             type="radio"

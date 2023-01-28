@@ -1,12 +1,25 @@
 .quiz-container {
-    text-align: left;
-    padding-left: 30%;
-  }
+  text-align: left;
+  padding-left: 30%;
+}
+
+.Quiz__question {
+  margin-bottom: 50px;
+}
+
+.Quiz__radioButtonContainer {
+  margin-top: 20px;
+}
+
+.Quiz__radioButton-label {
+  padding-left: 0.8em;
+}
 
 // Code as basis for the gradient button taken from https://stackdiary.com/gradient-hover-effect-css/
 .Quiz__gradientButton {
   display: flex;
   padding: 0.875em 2em;
+  margin-top: 50px;
   background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
   font-family: inherit;
   color: #fff;
