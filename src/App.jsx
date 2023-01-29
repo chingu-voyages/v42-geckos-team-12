@@ -1,11 +1,10 @@
 /* eslint-disable */
 
-import "./App.css";
 import { React } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
-import LandingPage from "./container/LandingPage/LandingPage";
-import Quiz from "./container/Quiz/Quiz";
+import { LandingPage, Quiz } from "./container"
+import "./App.css";
 
 function App() {
   return (
