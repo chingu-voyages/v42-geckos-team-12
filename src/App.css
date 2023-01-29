@@ -1,13 +1,6 @@
 .App {
-  height: 90vh;
-  width: 100vw;
   font-size: 18px;
   text-align: center;
   margin-top: 50px;
   font-family: Verdana, sans-serif;
 }
-
-.quiz-container {
-  text-align: center;
-}
-
