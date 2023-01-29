@@ -5,7 +5,7 @@ import { React } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
 import LandingPage from "./container/LandingPage/LandingPage";
-import Quiz from "./routes/Quiz";
+import Quiz from "./container/Quiz/Quiz";
 
 function App() {
   return (
