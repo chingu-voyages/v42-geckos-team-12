@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import "./Quiz.scss";
 
 function Quiz() {

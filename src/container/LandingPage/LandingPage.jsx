@@ -1,6 +1,7 @@
 import React from "react";
-import "./LandingPage.scss";
 import { Link } from "react-router-dom";
+
+import "./LandingPage.scss";
 
 export default function LandingPage() {
   function clickButton() {
