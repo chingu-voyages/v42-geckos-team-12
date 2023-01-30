@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.3",
     "dom": "^0.0.3",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.7.0",
@@ -16,7 +17,10 @@
     "sass": "^1.57.1",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://chingu-voyages.github.io/v42-geckos-team-12",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
