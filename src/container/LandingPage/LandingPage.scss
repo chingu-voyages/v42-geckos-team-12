@@ -1,5 +1,5 @@
 body {
-    background: url(sorting-hat.jpg);
+    background: url(../../assets/sorting-hat.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -25,7 +25,7 @@ body {
       }
 
     .LandingPage__button:hover {
-        background: url(sparklers-small.png);
+        background: url(../../assets/sparklers-small.png);
         cursor: pointer;
     }
   }
