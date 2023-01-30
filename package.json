@@ -17,7 +17,7 @@
     "sass": "^1.57.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://chingu-voyages.github.io/v42-geckos-team-12",
+  "homepage": "https://chingu-voyages.github.io/v42-geckos-team-12/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
