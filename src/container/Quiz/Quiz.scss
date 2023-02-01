@@ -1,42 +1,64 @@
 .quiz-container {
-  text-align: left;
-  padding-left: 30%;
-}
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 
 .Quiz__question {
-  margin-bottom: 50px;
+  font-size: 1.2rem;  
 }
+  
+  .Quiz__radioButtonContainer {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(148, 103, 16, 1);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
 
-.Quiz__radioButtonContainer {
-  margin-top: 12px;
-}
+    .Quiz__radioButton {
+      width: 15px;
+      height: 15px;
+    }
 
-.Quiz__radioButton {
-  border: 0px;
-  width: 20px;
-  height: 20px;
-}
-
-.Quiz__radioButton-label {
-  padding-left: 0.8em;
-  font-size: 22px;
-}
-
-// Code as basis for the gradient button taken from https://stackdiary.com/gradient-hover-effect-css/
-.Quiz__gradientButton {
-  display: flex;
-  padding: 0.875em 2em;
-  margin-top: 50px;
-  background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
-  font-family: inherit;
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  transition: background-color 2s;
-  place-content: center;
-}
-
-.Quiz__gradientButton:hover, .Quiz__gradientButton:focus {
-  background-color: #11ad0b;
-  color: #fff;
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: 0px 0px 10px rgb(148, 103, 16, 1);
+    }
+  }
+  
+  .Quiz__radioButton-label {
+    font-size: 1.2rem;
+    
+  }
+  
+  // Code as basis for the gradient button taken from https://stackdiary.com/gradient-hover-effect-css/
+  .Quiz__gradientButton {
+    padding: 0.875em 2em;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(148, 103, 16, 1);
+    font-family: inherit;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
+    
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: 0px 0px 10px rgb(148, 103, 16, 1);
+    }
+  }
+  
 }
