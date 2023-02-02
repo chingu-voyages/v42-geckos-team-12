@@ -11,71 +11,71 @@ function Quiz() {
   const [showSubmit, setShowSubmit] = useState(false);
   const [showNext, setShowNext] = useState(true);
 
-  const [questions, setQuestions] = useState([
+  const [questions] = useState([
     "Q1. The door is locked. What are you going to do?",
     "Q2. Which item would you choose in an unfamiliar room?",
-    "Q3. There's seven chairs and ten kids. What do you do?",
-    "Q4. In the morning, you are the person who",
+    "Q3. There are seven chairs and ten kids. What do you do?",
+    "Q4. In the morning, you are the person who says:",
     "Q5. What are you most afraid of?",
     "Q6. What class do you want to take the most in the world?",
-    "Q7. Do What is",
-    "Q8. What class do you want to take the most in the world?",
-    "Q9. What class do you want to take the most in the world?",
-    "Q10. What class do you want to take the most in the world?",
-    "Q11. What class do you want to take the most in the world?",
+    "Q7. Do what is",
+    "Q8. Which animal is your perfect companion?",
+    "Q9. What describes you best?",
+    "Q10. You get the chance to take care of an animal of your choice. Which one is it?",
+    "Q11. A look in the crystal ball reveals an important part of your life. What do you see?",
   ]);
 
-  const [optionA, setOptionA] = useState([
-    "Kicks it down",
+  const [optionA] = useState([
+    "Kick it down",
     "Cape",
     "The best seven of the lot can sit down",
     "The sky is so beautiful! I'm really looking forward to today!",
     "Discouragement",
     "Flying",
     "right",
-    "Eat",
-    "Poop",
-    "I will sleep",
-    "Eat",
+    "Owl",
+    "I'm not fearless, but I'll muster up my courage to do what is right.",
+    "A baby dragon. It will stay small, right?",
+    "My family.",
   ]);
-  const [optionB, setOptionB] = useState([
-    "Picks the lock",
+  const [optionB] = useState([
+    "Pick the lock",
     "Crystal ball",
     "Kill three",
-    "Why do you wake up now and make noise?",
+    "Why do you wake me up now and make noise?",
     "Failure",
     "Herbology",
     "necessary",
-    "Poop",
-    "I will sleep",
-    "Eat",
-    "Poop",
+    "Lizard",
+    "I mainly do what is best for myself and my closest friends. I don't care about others.",
+    "Anything that is potentially venomous. It will only bite my enemies anyways.",
+    "Fame and fortune. Mostly fame.",
   ]);
-  const [optionC, setOptionC] = useState([
-    "Finds the key",
+  const [optionC] = useState([
+    "Find the key",
     "Compass",
     "Bring three more chairs",
     "What dream did I dream? Should I go back to sleep agian?",
-    "Stupid",
+    "Stupidity",
     "Potions",
     "wise",
-    "Poop",
-    "Eat",
-    "Eat",
-    "Poop",
+    "Raven",
+    "I love to learn new things and I could spend hours in the library without getting bored.",
+    "A crow, an eagle or a raven. Such majestic and wise birds!",
+    "Progression and self-improvement.",
   ]);
-  const [optionD, setOptionD] = useState([
-    "Knocks",
+  const [optionD] = useState([
+    "Knock",
     "Diary",
     "Have everyone stand",
-    "What I need now is to drink warm tea in my favorite mug",
-    "Lie",
+    "What I need now is warm tea in my favorite mug.",
+    "Lies",
     "Defense Against the Dark Arts",
     "kind",
-    "Poop",
-    "I will sleep",
-    "Eat",
-    "Eat",
+    "Dog",
+    "I care a lot about how others feel and I'll comfort them if they need it.",
+    "A hippogryph (a mixture between a horse and an eagle). We can fly and enjoy the peaceful surroundings together.",
+    "Peace and harmony with nature.",
   ]);
 
   useEffect(() => {
