@@ -11,7 +11,7 @@ function Quiz() {
   const [showSubmit, setShowSubmit] = useState(false);
   const [showNext, setShowNext] = useState(true);
 
-  const [questions, setQuestions] = useState([
+  const [questions] = useState([
     "Q1. The door is locked. What are you going to do?",
     "Q2. Which item would you choose in an unfamiliar room?",
     "Q3. There's seven chairs and ten kids. What do you do?",
@@ -25,7 +25,7 @@ function Quiz() {
     "Q11. What class do you want to take the most in the world?",
   ]);
 
-  const [optionA, setOptionA] = useState([
+  const [optionA] = useState([
     "Kicks it down",
     "Cape",
     "The best seven of the lot can sit down",
@@ -38,7 +38,7 @@ function Quiz() {
     "I will sleep",
     "Eat",
   ]);
-  const [optionB, setOptionB] = useState([
+  const [optionB] = useState([
     "Picks the lock",
     "Crystal ball",
     "Kill three",
@@ -51,7 +51,7 @@ function Quiz() {
     "Eat",
     "Poop",
   ]);
-  const [optionC, setOptionC] = useState([
+  const [optionC] = useState([
     "Finds the key",
     "Compass",
     "Bring three more chairs",
@@ -64,7 +64,7 @@ function Quiz() {
     "Eat",
     "Poop",
   ]);
-  const [optionD, setOptionD] = useState([
+  const [optionD] = useState([
     "Knocks",
     "Diary",
     "Have everyone stand",

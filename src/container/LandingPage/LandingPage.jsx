@@ -4,10 +4,6 @@ import { Link } from "react-router-dom";
 import "./LandingPage.scss";
 
 export default function LandingPage() {
-  function clickButton() {
-    console.log("This button REALLY works!!!");
-  }
-
   return (
     <div className="LandingPage__container">
       <h1>Hogwarts House Mysteries</h1>
@@ -18,7 +14,6 @@ export default function LandingPage() {
       <Link to={`/quiz`}>
         <button
           className="LandingPage__button LandingPage__buton-fade"
-          onClick={clickButton}
         >
           START THE QUIZ
         </button>
