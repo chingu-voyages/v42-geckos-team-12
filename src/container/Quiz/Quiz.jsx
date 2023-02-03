@@ -135,62 +135,53 @@ function Quiz() {
         <h2 className="Quiz__question">{questions[clickedNumber]}</h2>
         {/* test buttons */}
         <div className="Quiz__radioButtonContainer">
-          <input
+          <button
             className="Quiz__radioButton"
-            type="radio"
+            type="button"
             id="answerA"
             value="answerA"
             name="answer"
             onClick={() => {
               setAnswerA(answerA + 1);
             }}
-          />
-          <label className="Quiz__radioButton-label" for="answerA">A. {optionA[clickedNumber]}</label>
+          >A. {optionA[clickedNumber]}</button>
         </div>
-
         <div className="Quiz__radioButtonContainer">
-          <input
+          <button
             className="Quiz__radioButton"
-            type="radio"
+            type="button"
             id="answerB"
             value="answerB"
             name="answer"
             onClick={() => {
               setAnswerB(answerB + 1);
             }}
-          />
-          <label className="Quiz__radioButton-label" for="answerB">B. {optionB[clickedNumber]}</label>
+          >B. {optionB[clickedNumber]}</button>
         </div>
-
         <div className="Quiz__radioButtonContainer">
-          <input
+          <button
             className="Quiz__radioButton"
-            type="radio"
+            type="button"
             id="answerC"
             value="answerC"
             name="answer"
             onClick={() => {
               setAnswerC(answerC + 1);
             }}
-          />
-          <label className="Quiz__radioButton-label" for="answerC">C. {optionC[clickedNumber]}</label>
+          >C. {optionC[clickedNumber]}</button>
         </div>
-
         <div className="Quiz__radioButtonContainer">
-          <input
+          <button
             className="Quiz__radioButton"
-            type="radio"
+            type="button"
             id="answerD"
             value="answerD"
             name="answer"
             onClick={() => {
               setAnswerD(answerD + 1);
             }}
-          />
-          <label className="Quiz__radioButton-label" for="answerD">D. {optionD[clickedNumber]}</label>
+          >D. {optionD[clickedNumber]}</button>
         </div>
-
-      
         {showNext === true ? <NextModal /> : null}
         {showSubmit === true ? <SubmitModal /> : null}
       </form>
