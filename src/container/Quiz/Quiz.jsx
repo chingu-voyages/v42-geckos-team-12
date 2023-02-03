@@ -143,6 +143,7 @@ function Quiz() {
             name="answer"
             onClick={() => {
               setAnswerA(answerA + 1);
+              setClickedNumber(clickedNumber + 1);
             }}
           >A. {optionA[clickedNumber]}</button>
         </div>
@@ -155,6 +156,7 @@ function Quiz() {
             name="answer"
             onClick={() => {
               setAnswerB(answerB + 1);
+              setClickedNumber(clickedNumber + 1);
             }}
           >B. {optionB[clickedNumber]}</button>
         </div>
@@ -167,6 +169,7 @@ function Quiz() {
             name="answer"
             onClick={() => {
               setAnswerC(answerC + 1);
+              setClickedNumber(clickedNumber + 1);
             }}
           >C. {optionC[clickedNumber]}</button>
         </div>
@@ -179,6 +182,7 @@ function Quiz() {
             name="answer"
             onClick={() => {
               setAnswerD(answerD + 1);
+              setClickedNumber(clickedNumber + 1);
             }}
           >D. {optionD[clickedNumber]}</button>
         </div>
