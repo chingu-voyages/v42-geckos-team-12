@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/v42-geckos-team-12/static/css/main.0cb3e6de.css",
-    "main.js": "/v42-geckos-team-12/static/js/main.a87222fc.js",
+    "main.css": "/v42-geckos-team-12/static/css/main.c29d4d8f.css",
+    "main.js": "/v42-geckos-team-12/static/js/main.f2b42a95.js",
     "static/js/787.28cb0dcd.chunk.js": "/v42-geckos-team-12/static/js/787.28cb0dcd.chunk.js",
     "static/media/sorting-hat.jpg": "/v42-geckos-team-12/static/media/sorting-hat.ee4fcefc05319250afab.jpg",
     "static/media/sparklers-small.png": "/v42-geckos-team-12/static/media/sparklers-small.1ac81efaebd5fee5fbd3.png",
     "index.html": "/v42-geckos-team-12/index.html",
-    "main.0cb3e6de.css.map": "/v42-geckos-team-12/static/css/main.0cb3e6de.css.map",
-    "main.a87222fc.js.map": "/v42-geckos-team-12/static/js/main.a87222fc.js.map",
+    "main.c29d4d8f.css.map": "/v42-geckos-team-12/static/css/main.c29d4d8f.css.map",
+    "main.f2b42a95.js.map": "/v42-geckos-team-12/static/js/main.f2b42a95.js.map",
     "787.28cb0dcd.chunk.js.map": "/v42-geckos-team-12/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0cb3e6de.css",
-    "static/js/main.a87222fc.js"
+    "static/css/main.c29d4d8f.css",
+    "static/js/main.f2b42a95.js"
   ]
 }
