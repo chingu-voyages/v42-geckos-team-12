@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import "./Footer.scss";
 
 
-function Footer () {
+export default function Footer () {
     return (
         <footer className="footer">
             <p className="copyright">Copyright 2023</p>
@@ -19,5 +18,3 @@ function Footer () {
         </footer>
     )
 }
-
-export default Footer();
