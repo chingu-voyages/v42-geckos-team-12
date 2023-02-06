@@ -1,14 +1,14 @@
 # Harry Potter House Sorting Quiz
-Ever wondered which Hogwarts dorm you belong to? This little APP let's you know just that! 
-Would you be helping Harry to uncover all the seecrets of Hogwarts, or would you be doing everything in your power to stop him alongside Draco.
+Ever wondered which Hogwarts dorm you belong to? This little APP lets you know just that! 
+Would you be helping Harry to uncover all the seecrets of Hogwarts, or would you be doing everything in your power to stop him alongside Draco?
 
 ## Overview
-This project was build by a team of four during voyage 42 at [chingu.io](https://www.chingu.io/).
+This project was built by a team of four during voyage 42 at [chingu.io](https://www.chingu.io/).
 The team did everything from deciding on what to build, what tech stack to use, the design and of course the execution.
-During the 6 week peroid of the voyage, the team had at least one meeting each week to review the past week, and to prepare for the coming week.
+During the 6 week peroid of the voyage, the team had at least one meeting each week to review the past week, and to prepare for the sprint in the coming week.
 
 ## Features
-This APP asks you a series of questions, and in the end it puts you in to one of the four houses at Hogwarts.
+This APP asks you a series of questions, and in the end it puts you into one of the four houses at Hogwarts.
 
 ## Running The Project
 Running this project is super simple
