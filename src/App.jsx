@@ -2,8 +2,7 @@
 
 import { React } from "react";
 import { Routes, Route, Link } from "react-router-dom";
-
-import { LandingPage, Quiz } from "./container"
+import { Gryffindor, LandingPage, Quiz, Result } from "./container"
 import "./App.css";
 
 function App() {
@@ -12,6 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />}></Route>
         <Route path="/quiz" element={<Quiz />}></Route>
+        <Route path="/gryffindor" element={<Gryffindor />}></Route>
+        <Route path="/result" element={<Result />}></Route>
       </Routes>
     </div>
   );
