@@ -1,16 +1,35 @@
 .footer {
     display: flex;
     justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(3, 3, 3, 0.5);
+    background-image: url('https://user-images.githubusercontent.com/74983536/128005620-f7f44ba5-14d7-4329-abe4-0da9c93137e1.png');
+    background-repeat: no-repeat;
+    background-position: 28vw;
+    background-size: 10rem;
 }
 .copyright {
     display: flex;
     align-items: center;
 }
 .img-one {
-    border-radius: 50%;
-    margin: 0px 10px 0px 10px;
+    border-radius: 1rem;
+    margin: 0px 10px 15px 10px;
+    max-width: 200px;
+    min-height: 70px;
+    background-color: #f3f3f3;
 }
 .img-two {
-    border-radius: 50%;
-    margin: 0px 0px 0px 10px;
+    border-radius: 1rem;
+    margin: 0px 0px 15px 10px;
+    max-width: 70px;
+}
+
+@media (max-width: 800px) {
+    .footer {
+        background-image: none;
+    }
 }
