@@ -9,6 +9,7 @@ function Quiz() {
   const [answerC, setAnswerC] = useState(0);
   const [answerD, setAnswerD] = useState(0);
   const [clickedNumber, setClickedNumber] = useState(0);
+  const [showQuizButtons, setShowQuizButtons] = useState(true);
   const [showSubmit, setShowSubmit] = useState(false);
   const [showNext, setShowNext] = useState(false);
   const [showResult, setShowResult] = useState(null);
@@ -84,16 +85,18 @@ function Quiz() {
     if (clickedNumber === 11) {
       setShowSubmit(true);
       setShowNext(false);
+      setShowQuizButtons(false);
     } else {
       setShowSubmit(false);
       setShowNext(false);
+      setShowQuizButtons(true);
     }
   }, [clickedNumber]);
 
   function SubmitModal() {
     return (
       <p>
-        <input className="Quiz__gradientButton" type="submit" />
+        <input className="Quiz__gradientButton" type="submit" value="Show me my house!" />
       </p>
     );
   }
@@ -134,16 +137,9 @@ function Quiz() {
     }
   }
 
-  return (
-    <div className="quiz-container">
-      <form
-        onSubmit={(event) => {
-          event.preventDefault();
-          handleSubmit();
-        }}
-      >
-        <h2 className="Quiz__question">{questions[clickedNumber]}</h2>
-        {/* test buttons */}
+  function QuizButtons() {
+    return(
+      <div>
         <div className="Quiz__radioButtonContainer">
           <button
             className="Quiz__radioButton"
@@ -196,6 +192,21 @@ function Quiz() {
             }}
           >D. {optionD[clickedNumber]}</button>
         </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="quiz-container">
+      <form
+        onSubmit={(event) => {
+          event.preventDefault();
+          handleSubmit();
+        }}
+      >
+        <h2 className="Quiz__question">{questions[clickedNumber]}</h2>
+        {/* test buttons */}  
+        {showQuizButtons === true ? <QuizButtons /> : null}
         {showNext === true ? <NextModal /> : null}
         {showSubmit === true ? <SubmitModal /> : null}
       </form>
