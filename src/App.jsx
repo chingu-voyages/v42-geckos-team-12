@@ -3,10 +3,7 @@
 import { React } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
-import { LandingPage, Quiz, Footer } from "./container"
-import "./App.css";
-
-import { Gryffindor, Hufflepuff, LandingPage, Quiz, Ravenclaw, Result, Slytherin } from "./container"
+import { Gryffindor, Hufflepuff, LandingPage, Quiz, Ravenclaw, Result, Slytherin, Footer } from "./container"
 
 import "./App.css";
 
