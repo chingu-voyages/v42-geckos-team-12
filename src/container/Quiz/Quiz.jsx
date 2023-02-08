@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Gryffindor, Slytherin, Ravenclaw, Hufflepuff } from "../index";
 
 import "./Quiz.scss";
 
@@ -10,6 +11,7 @@ function Quiz() {
   const [clickedNumber, setClickedNumber] = useState(0);
   const [showSubmit, setShowSubmit] = useState(false);
   const [showNext, setShowNext] = useState(true);
+  const [showResult, setShowResult] = useState(null);
 
   const [questions] = useState([
     "Q1. The door is locked. What are you going to do?",
@@ -114,13 +116,21 @@ function Quiz() {
   function handleSubmit() {
     let max = Math.max(answerA, answerB, answerC, answerD);
     if (answerA === max) {
-      alert("Your house is Gryffindor");
+      // Gryffindor
+      setShowResult(answerA);
+      setShowSubmit(false);
     } else if (answerB === max) {
-      alert("Your house is Slytherin");
+      // Slytherin
+      setShowResult(answerB);
+      setShowSubmit(false);
     } else if (answerC === max) {
-      alert("Your house is Ravenclaw");
+      // Ravenclaw
+      setShowResult(answerC);
+      setShowSubmit(false);
     } else if (answerD === max) {
-      alert("Your house is Hufflepuff");
+      // Hufflepuff
+      setShowResult(answerD);
+      setShowSubmit(false);
     }
   }
 
@@ -185,6 +195,10 @@ function Quiz() {
         {showNext === true ? <NextModal /> : null}
         {showSubmit === true ? <SubmitModal /> : null}
       </form>
+      {showResult === answerA ? <Gryffindor /> : null}
+      {showResult === answerB ? <Slytherin /> : null}
+      {showResult === answerC ? <Ravenclaw /> : null}
+      {showResult === answerD ? <Hufflepuff /> : null}
     </div>
   );
 }
