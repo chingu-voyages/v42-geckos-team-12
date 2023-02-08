@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Gryffindor, Slytherin, Ravenclaw, Hufflepuff } from "../index";
 
 import "./Quiz.scss";
 
@@ -8,8 +9,10 @@ function Quiz() {
   const [answerC, setAnswerC] = useState(0);
   const [answerD, setAnswerD] = useState(0);
   const [clickedNumber, setClickedNumber] = useState(0);
+  const [showQuizButtons, setShowQuizButtons] = useState(true);
   const [showSubmit, setShowSubmit] = useState(false);
-  const [showNext, setShowNext] = useState(true);
+  const [showNext, setShowNext] = useState(false);
+  const [showResult, setShowResult] = useState(null);
 
   const [questions] = useState([
     "Q1. The door is locked. What are you going to do?",
@@ -79,19 +82,21 @@ function Quiz() {
   ]);
 
   useEffect(() => {
-    if (clickedNumber === 10) {
+    if (clickedNumber === 11) {
       setShowSubmit(true);
       setShowNext(false);
+      setShowQuizButtons(false);
     } else {
       setShowSubmit(false);
-      setShowNext(true);
+      setShowNext(false);
+      setShowQuizButtons(true);
     }
   }, [clickedNumber]);
 
   function SubmitModal() {
     return (
       <p>
-        <input className="Quiz__gradientButton" type="submit" />
+        <input className="Quiz__gradientButton" type="submit" value="Show me my house!" />
       </p>
     );
   }
@@ -114,26 +119,27 @@ function Quiz() {
   function handleSubmit() {
     let max = Math.max(answerA, answerB, answerC, answerD);
     if (answerA === max) {
-      alert("Your house is Gryffindor");
+      // Gryffindor
+      setShowResult(answerA);
+      setShowSubmit(false);
     } else if (answerB === max) {
-      alert("Your house is Slytherin");
+      // Slytherin
+      setShowResult(answerB);
+      setShowSubmit(false);
     } else if (answerC === max) {
-      alert("Your house is Ravenclaw");
+      // Ravenclaw
+      setShowResult(answerC);
+      setShowSubmit(false);
     } else if (answerD === max) {
-      alert("Your house is Hufflepuff");
+      // Hufflepuff
+      setShowResult(answerD);
+      setShowSubmit(false);
     }
   }
 
-  return (
-    <div className="quiz-container">
-      <form
-        onSubmit={(event) => {
-          event.preventDefault();
-          handleSubmit();
-        }}
-      >
-        <h2 className="Quiz__question">{questions[clickedNumber]}</h2>
-        {/* test buttons */}
+  function QuizButtons() {
+    return(
+      <div>
         <div className="Quiz__radioButtonContainer">
           <button
             className="Quiz__radioButton"
@@ -143,6 +149,7 @@ function Quiz() {
             name="answer"
             onClick={() => {
               setAnswerA(answerA + 1);
+              setClickedNumber(clickedNumber + 1);
             }}
           >A. {optionA[clickedNumber]}</button>
         </div>
@@ -155,6 +162,7 @@ function Quiz() {
             name="answer"
             onClick={() => {
               setAnswerB(answerB + 1);
+              setClickedNumber(clickedNumber + 1);
             }}
           >B. {optionB[clickedNumber]}</button>
         </div>
@@ -167,6 +175,7 @@ function Quiz() {
             name="answer"
             onClick={() => {
               setAnswerC(answerC + 1);
+              setClickedNumber(clickedNumber + 1);
             }}
           >C. {optionC[clickedNumber]}</button>
         </div>
@@ -179,12 +188,32 @@ function Quiz() {
             name="answer"
             onClick={() => {
               setAnswerD(answerD + 1);
+              setClickedNumber(clickedNumber + 1);
             }}
           >D. {optionD[clickedNumber]}</button>
         </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="quiz-container">
+      <form
+        onSubmit={(event) => {
+          event.preventDefault();
+          handleSubmit();
+        }}
+      >
+        <h2 className="Quiz__question">{questions[clickedNumber]}</h2>
+        {/* test buttons */}  
+        {showQuizButtons === true ? <QuizButtons /> : null}
         {showNext === true ? <NextModal /> : null}
         {showSubmit === true ? <SubmitModal /> : null}
       </form>
+      {showResult === answerA ? <Gryffindor /> : null}
+      {showResult === answerB ? <Slytherin /> : null}
+      {showResult === answerC ? <Ravenclaw /> : null}
+      {showResult === answerD ? <Hufflepuff /> : null}
     </div>
   );
 }
