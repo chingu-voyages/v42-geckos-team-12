@@ -10,7 +10,7 @@ function Quiz() {
   const [answerD, setAnswerD] = useState(0);
   const [clickedNumber, setClickedNumber] = useState(0);
   const [showSubmit, setShowSubmit] = useState(false);
-  const [showNext, setShowNext] = useState(true);
+  const [showNext, setShowNext] = useState(false);
   const [showResult, setShowResult] = useState(null);
 
   const [questions] = useState([
@@ -81,12 +81,12 @@ function Quiz() {
   ]);
 
   useEffect(() => {
-    if (clickedNumber === 10) {
+    if (clickedNumber === 11) {
       setShowSubmit(true);
       setShowNext(false);
     } else {
       setShowSubmit(false);
-      setShowNext(true);
+      setShowNext(false);
     }
   }, [clickedNumber]);
 
@@ -153,6 +153,7 @@ function Quiz() {
             name="answer"
             onClick={() => {
               setAnswerA(answerA + 1);
+              setClickedNumber(clickedNumber + 1);
             }}
           >A. {optionA[clickedNumber]}</button>
         </div>
@@ -165,6 +166,7 @@ function Quiz() {
             name="answer"
             onClick={() => {
               setAnswerB(answerB + 1);
+              setClickedNumber(clickedNumber + 1);
             }}
           >B. {optionB[clickedNumber]}</button>
         </div>
@@ -177,6 +179,7 @@ function Quiz() {
             name="answer"
             onClick={() => {
               setAnswerC(answerC + 1);
+              setClickedNumber(clickedNumber + 1);
             }}
           >C. {optionC[clickedNumber]}</button>
         </div>
@@ -189,6 +192,7 @@ function Quiz() {
             name="answer"
             onClick={() => {
               setAnswerD(answerD + 1);
+              setClickedNumber(clickedNumber + 1);
             }}
           >D. {optionD[clickedNumber]}</button>
         </div>
