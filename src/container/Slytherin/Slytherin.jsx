@@ -13,6 +13,12 @@ export default function Slytherin() {
         <Result
           hogwartsHouse={slytherin}
         />
+        <div className="Quiz__radioButtonContainer">
+          <button
+            className="Quiz__radioButton"
+            onClick={() => window.location.reload(true)}
+          >Try again</button>
+        </div>
       </div>
     ); 
 }
