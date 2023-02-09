@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Gryffindor, Slytherin, Ravenclaw, Hufflepuff } from "../index";
 
+import { Gryffindor, Slytherin, Ravenclaw, Hufflepuff } from "../index";
 import "./Quiz.scss";
 
 function Quiz() {
@@ -11,7 +11,6 @@ function Quiz() {
   const [clickedNumber, setClickedNumber] = useState(0);
   const [showQuizButtons, setShowQuizButtons] = useState(true);
   const [showSubmit, setShowSubmit] = useState(false);
-  const [showNext, setShowNext] = useState(false);
   const [showResultA, setShowResultA] = useState(false);
   const [showResultB, setShowResultB] = useState(false);
   const [showResultC, setShowResultC] = useState(false);
@@ -87,11 +86,9 @@ function Quiz() {
   useEffect(() => {
     if (clickedNumber === 11) {
       setShowSubmit(true);
-      setShowNext(false);
       setShowQuizButtons(false);
     } else {
       setShowSubmit(false);
-      setShowNext(false);
       setShowQuizButtons(true);
     }
   }, [clickedNumber]);
@@ -100,21 +97,6 @@ function Quiz() {
     return (
       <p>
         <input className="Quiz__gradientButton" type="submit" value="Show me my house!" />
-      </p>
-    );
-  }
-
-  function NextModal() {
-    return (
-      <p>
-        <input
-          className="Quiz__gradientButton"
-          type="button"
-          value="Next"
-          onClick={() => {
-            setClickedNumber(clickedNumber + 1);
-          }}
-        />
       </p>
     );
   }
@@ -216,7 +198,6 @@ function Quiz() {
         <h2 className="Quiz__question">{questions[clickedNumber]}</h2>
         {/* test buttons */}  
         {showQuizButtons === true ? <QuizButtons /> : null}
-        {showNext === true ? <NextModal /> : null}
         {showSubmit === true ? <SubmitModal /> : null}
       </form>
       {showResultA === true ? <Gryffindor /> : null}
