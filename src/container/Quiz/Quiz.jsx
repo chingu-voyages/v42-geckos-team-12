@@ -91,7 +91,6 @@ function Quiz() {
       setShowQuizButtons(false);
     } else {
       setShowSubmit(false);
-      setShowNext(false);
       setShowQuizButtons(true);
     }
   }, [clickedNumber]);
@@ -100,21 +99,6 @@ function Quiz() {
     return (
       <p>
         <input className="Quiz__gradientButton" type="submit" value="Show me my house!" />
-      </p>
-    );
-  }
-
-  function NextModal() {
-    return (
-      <p>
-        <input
-          className="Quiz__gradientButton"
-          type="button"
-          value="Next"
-          onClick={() => {
-            setClickedNumber(clickedNumber + 1);
-          }}
-        />
       </p>
     );
   }
@@ -216,7 +200,6 @@ function Quiz() {
         <h2 className="Quiz__question">{questions[clickedNumber]}</h2>
         {/* test buttons */}  
         {showQuizButtons === true ? <QuizButtons /> : null}
-        {showNext === true ? <NextModal /> : null}
         {showSubmit === true ? <SubmitModal /> : null}
       </form>
       {showResultA === true ? <Gryffindor /> : null}
