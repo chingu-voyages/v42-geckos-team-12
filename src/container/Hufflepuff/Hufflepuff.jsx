@@ -13,6 +13,12 @@ export default function Hufflepuff() {
         <Result
           hogwartsHouse={hufflepuff}
         />
+        <div className="Quiz__radioButtonContainer">
+          <button
+            className="Quiz__radioButton"
+            onClick={() => window.location.reload(true)}
+          >Try again</button>
+        </div>
       </div>
     ); 
 }

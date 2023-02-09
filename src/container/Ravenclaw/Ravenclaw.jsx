@@ -13,6 +13,12 @@ export default function Ravenclaw() {
         <Result
           hogwartsHouse={ravenclaw}
         />
+        <div className="Quiz__radioButtonContainer">
+          <button
+            className="Quiz__radioButton"
+            onClick={() => window.location.reload(true)}
+          >Try again</button>
+        </div>
       </div>
     ); 
 }

@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./Gryffindor.scss";
 import gryffindorSigil from "../../assets/gryffindor-sigil.png"
 import myResult from "../../result.json";
@@ -13,6 +14,12 @@ export default function Gryffindor() {
         <Result
           hogwartsHouse={gryffindor}
         />
+        <div className="Quiz__radioButtonContainer">
+          <button
+            className="Quiz__radioButton"
+            onClick={() => window.location.reload(true)}
+          >Try again</button>
+        </div>
       </div>
     ); 
 }
