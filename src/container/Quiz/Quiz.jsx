@@ -133,7 +133,7 @@ function Quiz() {
       <div>
         <div className="Quiz__radioButtonContainer">
           <button
-            className="Quiz__radioButton"
+            className="Quiz__radioButton glow-effect"
             type="button"
             id="answerA"
             value="answerA"
@@ -142,11 +142,16 @@ function Quiz() {
               setAnswerA(answerA + 1);
               setClickedNumber(clickedNumber + 1);
             }}
-          >A. {optionA[clickedNumber]}</button>
+          >A. {optionA[clickedNumber]}
+            <svg className="glow-container">
+              <rect rx="10" pathLength="100" strokeLinecap="round" className="glow-blur"></rect>
+              <rect rx="10" pathLength="100" strokeLinecap="round" className="glow-line"></rect>
+            </svg>
+          </button>
         </div>
         <div className="Quiz__radioButtonContainer">
           <button
-            className="Quiz__radioButton"
+            className="Quiz__radioButton glow-effect"
             type="button"
             id="answerB"
             value="answerB"
@@ -155,11 +160,16 @@ function Quiz() {
               setAnswerB(answerB + 1);
               setClickedNumber(clickedNumber + 1);
             }}
-          >B. {optionB[clickedNumber]}</button>
+          >B. {optionB[clickedNumber]}
+            <svg className="glow-container">
+              <rect rx="10" pathLength="100" strokeLinecap="round" className="glow-blur"></rect>
+              <rect rx="10" pathLength="100" strokeLinecap="round" className="glow-line"></rect>
+            </svg>
+          </button>
         </div>
         <div className="Quiz__radioButtonContainer">
           <button
-            className="Quiz__radioButton"
+            className="Quiz__radioButton glow-effect"
             type="button"
             id="answerC"
             value="answerC"
@@ -168,11 +178,16 @@ function Quiz() {
               setAnswerC(answerC + 1);
               setClickedNumber(clickedNumber + 1);
             }}
-          >C. {optionC[clickedNumber]}</button>
+          >C. {optionC[clickedNumber]}
+            <svg className="glow-container">
+              <rect rx="10" pathLength="100" strokeLinecap="round" className="glow-blur"></rect>
+              <rect rx="10" pathLength="100" strokeLinecap="round" className="glow-line"></rect>
+            </svg>
+          </button>
         </div>
         <div className="Quiz__radioButtonContainer">
           <button
-            className="Quiz__radioButton"
+            className="Quiz__radioButton glow-effect"
             type="button"
             id="answerD"
             value="answerD"
@@ -181,7 +196,12 @@ function Quiz() {
               setAnswerD(answerD + 1);
               setClickedNumber(clickedNumber + 1);
             }}
-          >D. {optionD[clickedNumber]}</button>
+          >D. {optionD[clickedNumber]}
+            <svg className="glow-container">
+              <rect rx="10" pathLength="100" strokeLinecap="round" className="glow-blur"></rect>
+              <rect rx="10" pathLength="100" strokeLinecap="round" className="glow-line"></rect>
+            </svg>
+          </button>
         </div>
       </div>
     );
