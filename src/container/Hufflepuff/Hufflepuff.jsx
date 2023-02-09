@@ -1,6 +1,7 @@
 import React from "react";
+
 import "./Hufflepuff.scss";
-import hufflepuffSigil from "../../assets/hufflepuff-sigil.png"
+import { images } from "../../constants"
 import myResult from "../../result.json";
 import Result from "../Result/Result";
 
@@ -9,9 +10,9 @@ export default function Hufflepuff() {
 
     return (
       <div>
-        <img src={hufflepuffSigil} alt="Hufflepuff's house sigil with a badger on a yellow background" />
+        <img src={ images.hufflepuffSigil } alt="Hufflepuff's house sigil with a badger on a yellow background" />
         <Result
-          hogwartsHouse={hufflepuff}
+          hogwartsHouse={ hufflepuff }
         />
         <div className="Quiz__radioButtonContainer">
           <button
