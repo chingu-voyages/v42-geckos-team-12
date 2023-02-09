@@ -12,8 +12,11 @@ function Quiz() {
   const [showQuizButtons, setShowQuizButtons] = useState(true);
   const [showSubmit, setShowSubmit] = useState(false);
   const [showNext, setShowNext] = useState(false);
-  const [showResult, setShowResult] = useState(null);
-
+  const [showResultA, setShowResultA] = useState(false);
+  const [showResultB, setShowResultB] = useState(false);
+  const [showResultC, setShowResultC] = useState(false);
+  const [showResultD, setShowResultD] = useState(false);
+  
   const [questions] = useState([
     "Q1. The door is locked. What are you going to do?",
     "Q2. Which item would you choose in an unfamiliar room?",
@@ -117,22 +120,28 @@ function Quiz() {
   }
 
   function handleSubmit() {
+    /* If two answers are chosen equally often, The answer that comes first
+     * in the order of the if-statements is chosen as the result.
+     * As soon as one of the if-statements is fulfulled, it stops there and shows the result.
+     * Example 1: 5 times answerB and 5 times answerC ==> result: answerB
+     * Example 2: 3 times answerA, 3 times answerB and 3 times answerD ==> answerA
+     */
     let max = Math.max(answerA, answerB, answerC, answerD);
     if (answerA === max) {
       // Gryffindor
-      setShowResult(answerA);
+      setShowResultA(true);
       setShowSubmit(false);
     } else if (answerB === max) {
       // Slytherin
-      setShowResult(answerB);
+      setShowResultB(true);
       setShowSubmit(false);
     } else if (answerC === max) {
       // Ravenclaw
-      setShowResult(answerC);
+      setShowResultC(true);
       setShowSubmit(false);
     } else if (answerD === max) {
       // Hufflepuff
-      setShowResult(answerD);
+      setShowResultD(true);
       setShowSubmit(false);
     }
   }
@@ -210,10 +219,10 @@ function Quiz() {
         {showNext === true ? <NextModal /> : null}
         {showSubmit === true ? <SubmitModal /> : null}
       </form>
-      {showResult === answerA ? <Gryffindor /> : null}
-      {showResult === answerB ? <Slytherin /> : null}
-      {showResult === answerC ? <Ravenclaw /> : null}
-      {showResult === answerD ? <Hufflepuff /> : null}
+      {showResultA === true ? <Gryffindor /> : null}
+      {showResultB === true ? <Slytherin /> : null}
+      {showResultC === true ? <Ravenclaw /> : null}
+      {showResultD === true ? <Hufflepuff /> : null}
     </div>
   );
 }
