@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 import "./LandingPage.scss";
 
@@ -17,6 +18,7 @@ export default function LandingPage() {
           START THE QUIZ
         </button>
       </Link>
+      <Footer />
     </div>
   );
 }
