@@ -33,3 +33,9 @@
         background-image: none;
     }
 }
+
+@media (max-width: 450px) {
+    .footer {
+        min-width: 450px;
+    }
+}
