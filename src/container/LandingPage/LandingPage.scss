@@ -1,20 +1,10 @@
-body {
-    background: url(../../assets/sorting-hat.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-    color: white;
-  }
-  
-  .LandingPage__container {
+.LandingPage__container {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .LandingPage__button {
-        width: 400px;
+        width: 340px;
         height: 200px;
         color: white;
         background: rgba(0, 0, 0, 0.8);
