@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import { Gryffindor, Slytherin, Ravenclaw, Hufflepuff } from "../index";
 import "./Quiz.scss";
 
@@ -189,21 +188,21 @@ function Quiz() {
 
   return (
     <div className="quiz-container">
-      <form
-        onSubmit={(event) => {
-          event.preventDefault();
-          handleSubmit();
-        }}
-      >
-        <h2 className="Quiz__question">{questions[clickedNumber]}</h2>
-        {/* test buttons */}  
-        {showQuizButtons === true ? <QuizButtons /> : null}
-        {showSubmit === true ? <SubmitModal /> : null}
-      </form>
-      {showResultA === true ? <Gryffindor /> : null}
-      {showResultB === true ? <Slytherin /> : null}
-      {showResultC === true ? <Ravenclaw /> : null}
-      {showResultD === true ? <Hufflepuff /> : null}
+        <form
+          onSubmit={(event) => {
+            event.preventDefault();
+            handleSubmit();
+          }}
+        >
+          <h2 className="Quiz__question">{questions[clickedNumber]}</h2>
+          {/* test buttons */}  
+          {showQuizButtons === true ? <QuizButtons /> : null}
+          {showSubmit === true ? <SubmitModal /> : null}
+        </form>
+        {showResultA === true ? <Gryffindor /> : null}
+        {showResultB === true ? <Slytherin /> : null}
+        {showResultC === true ? <Ravenclaw /> : null}
+        {showResultD === true ? <Hufflepuff /> : null}
     </div>
   );
 }
