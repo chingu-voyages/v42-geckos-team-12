@@ -8,11 +8,11 @@ export default function Footer () {
         <footer className="footer">
             <p className="copyright">Copyright 2023</p>
             <p>
-                <a href="https://www.chingu.io/">
-                    <img className="img-one" src="https://www.chingu.io/logo-with-text-192.png" alt="Chingu logo" target="_blank"></img>
+                <a href="https://www.chingu.io/" target="_blank" rel="noreferrer">
+                    <img className="img-one" src="https://www.chingu.io/logo-with-text-192.png" alt="Chingu logo"></img>
                 </a>
-                <a href="https://github.com/chingu-voyages/v42-geckos-team-12">
-                    <img className="img-two" src="https://avatars.githubusercontent.com/u/583231?v=4" alt="GitHub logo" target="_blank"></img>
+                <a href="https://github.com/chingu-voyages/v42-geckos-team-12" target="_blank" rel="noreferrer">
+                    <img className="img-two" src="https://avatars.githubusercontent.com/u/583231?v=4" alt="GitHub logo" ></img>
                 </a>
             </p>
         </footer>
