@@ -4,3 +4,13 @@
   margin-top: 50px;
   font-family: Verdana, sans-serif;
 }
+
+body {
+  background: url(../src/assets/sorting-hat.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  color: white;
+}
