@@ -30,7 +30,7 @@ export default function LandingPage() {
 
       <Link to={`/quiz`}>
         <button
-          className="LandingPage__button LandingPage__buton-fade"
+          className="LandingPage__button "
           style={{ fontFamily: 'Playfair Display, serif' }}
         >
           START

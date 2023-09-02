@@ -23,7 +23,7 @@
     width: 240px;
     height: 120px;
     color: white;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.63);
     border: 1px solid #ffffffc7;
     border-radius: 5px;
     font-size: 20px;
@@ -32,7 +32,7 @@
   }
 
   .LandingPage__button:hover {
-    background: url(../../assets/sparklers-small.png);
+    background-image: url('../../assets/sparklers.png');
     cursor: pointer;
   }
 }
