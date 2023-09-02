@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/v42-geckos-team-12/static/css/main.7ede8d5b.css",
-    "main.js": "/v42-geckos-team-12/static/js/main.b7de46e9.js",
+    "main.css": "/v42-geckos-team-12/static/css/main.fd14a2f0.css",
+    "main.js": "/v42-geckos-team-12/static/js/main.bb322362.js",
     "static/js/787.28cb0dcd.chunk.js": "/v42-geckos-team-12/static/js/787.28cb0dcd.chunk.js",
     "static/media/sorting-hat.jpg": "/v42-geckos-team-12/static/media/sorting-hat.ee4fcefc05319250afab.jpg",
+    "static/media/sparklers.png": "/v42-geckos-team-12/static/media/sparklers.fa01a2d8a458e3a29965.png",
     "static/media/sparklers-small.png": "/v42-geckos-team-12/static/media/sparklers-small.1ac81efaebd5fee5fbd3.png",
     "static/media/ravenclaw-sigil.png": "/v42-geckos-team-12/static/media/ravenclaw-sigil.b672af2d8b53a8ae9ad0.png",
     "static/media/gryffindor-sigil.png": "/v42-geckos-team-12/static/media/gryffindor-sigil.285e0b0d50b6c65c5acb.png",
     "static/media/slytherin-sigil.png": "/v42-geckos-team-12/static/media/slytherin-sigil.ed250aa26df37ca5d8fd.png",
     "static/media/hufflepuff-sigil.png": "/v42-geckos-team-12/static/media/hufflepuff-sigil.a44158611f4617e7a050.png",
     "index.html": "/v42-geckos-team-12/index.html",
-    "main.7ede8d5b.css.map": "/v42-geckos-team-12/static/css/main.7ede8d5b.css.map",
-    "main.b7de46e9.js.map": "/v42-geckos-team-12/static/js/main.b7de46e9.js.map",
+    "main.fd14a2f0.css.map": "/v42-geckos-team-12/static/css/main.fd14a2f0.css.map",
+    "main.bb322362.js.map": "/v42-geckos-team-12/static/js/main.bb322362.js.map",
     "787.28cb0dcd.chunk.js.map": "/v42-geckos-team-12/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ede8d5b.css",
-    "static/js/main.b7de46e9.js"
+    "static/css/main.fd14a2f0.css",
+    "static/js/main.bb322362.js"
   ]
 }
