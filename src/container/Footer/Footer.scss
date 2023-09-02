@@ -1,59 +1,61 @@
 footer {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    position: absolute;
-    bottom: 0;
+  position: 'fixed';
+  left: 0;
+  bottom: 15;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  .footer__container {
+    position: 'fixed';
     left: 0;
+    bottom: 15;
     width: 100%;
-    background-color: rgba(3, 3, 3, 0.5);
+    display: flex;
+    justify-content: center;
+    text-align: center;
 
-    .footer__container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-grow: 1;
+    .footer__copyright {
+      font-size: 1rem;
+      align-self: center;
+    }
 
-        .footer__copyright {
-            font-size: 1rem;
-            align-self: center;
-        }
-    
-        .footer__img-hp {
-            height: 30px;
+    .footer__img-hp {
+      height: 30px;
 
-            @media screen and (min-width: 900px) {
-                height: 60px;
-            }
-        }
-        .footer__img-chingu {
-            border-radius: 6px;
-            margin: 0px 10px 15px 10px;
-            width: 100px;
-            background-color: #f3f3f3;
+      @media screen and (min-width: 900px) {
+        height: 60px;
+      }
+    }
+    .footer__img-chingu {
+      border-radius: 6px;
+      margin: 0px 10px 15px 10px;
+      width: 100px;
+      background-color: #f3f3f3;
 
-            @media screen and (min-width: 900px) {
-                width: 200px;
-            }
-        }
-    
-        .footer__img-github {
-            border-radius: 6px;
-            margin: 0px 0px 15px 10px;
-            width: 35px;
+      @media screen and (min-width: 900px) {
+        width: 200px;
+      }
+    }
 
-            @media screen and (min-width: 900px) {
-                width: 70px;
-            }
-        }
+    .footer__img-github {
+      border-radius: 6px;
+      margin: 0px 0px 15px 10px;
+      width: 35px;
 
-        @media screen and (min-width: 900px) {
-            justify-content: space-evenly;
-        }
+      @media screen and (min-width: 900px) {
+        width: 70px;
+      }
     }
 
     @media screen and (min-width: 900px) {
-        flex-direction: row;
-        justify-content: space-evenly;
+      justify-content: space-evenly;
     }
+  }
+
+  @media screen and (min-width: 900px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }

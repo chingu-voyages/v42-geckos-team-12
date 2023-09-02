@@ -1,9 +1,9 @@
-import React from 'react'
-import "./Result.scss";
+import React from 'react';
+import './Result.scss';
 
 export default function Result({ hogwartsHouse }) {
   return (
-    <div>
+    <div style={{ fontFamily: 'Merriweather, serif' }}>
       <h1>You're in {hogwartsHouse.name}!</h1>
       <p>Animal: {hogwartsHouse.animal}</p>
       <p>Element: {hogwartsHouse.element}</p>

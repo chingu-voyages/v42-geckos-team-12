@@ -1,21 +1,38 @@
 .LandingPage__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    .LandingPage__button {
-        width: 340px;
-        height: 200px;
-        color: white;
-        background: rgba(0, 0, 0, 0.8);
-        border: 5px solid;
-        border-color: white;
-        font-size: 20px;
-        font-weight: bold;
-      }
-
-    .LandingPage__button:hover {
-        background: url(../../assets/sparklers-small.png);
-        cursor: pointer;
-    }
+  .LandingPage__secondTitle {
+    font-size: 2.2rem;
+    margin-top: 7.7rem;
+    color: #ecececf2;
+    text-shadow: 3px 3px #090909;
+    font-weight: 900;
   }
+
+  .LandingPage__context {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #d8d8d8;
+    text-shadow: 3px 3px #1f1e1e;
+    font-weight: 700;
+  }
+
+  .LandingPage__button {
+    width: 240px;
+    height: 120px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #ffffffc7;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 3rem;
+  }
+
+  .LandingPage__button:hover {
+    background: url(../../assets/sparklers-small.png);
+    cursor: pointer;
+  }
+}

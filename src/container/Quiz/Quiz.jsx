@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
-import { Gryffindor, Slytherin, Ravenclaw, Hufflepuff } from "../index";
-import "./Quiz.scss";
+import { useEffect, useState } from 'react';
+import { Gryffindor, Slytherin, Ravenclaw, Hufflepuff } from '../index';
+import './Quiz.scss';
+import { Link } from 'react-router-dom';
 
 function Quiz() {
   const [answerA, setAnswerA] = useState(0);
@@ -14,72 +15,72 @@ function Quiz() {
   const [showResultB, setShowResultB] = useState(false);
   const [showResultC, setShowResultC] = useState(false);
   const [showResultD, setShowResultD] = useState(false);
-  
+
   const [questions] = useState([
-    "Q1. The door is locked. What are you going to do?",
-    "Q2. Which item would you choose in an unfamiliar room?",
-    "Q3. There are seven chairs and ten kids. What do you do?",
-    "Q4. In the morning, you are the person who says:",
-    "Q5. What are you most afraid of?",
-    "Q6. What class do you want to take the most in the world?",
-    "Q7. Do what is",
-    "Q8. Which animal is your perfect companion?",
-    "Q9. What describes you best?",
-    "Q10. You get the chance to take care of an animal of your choice. Which one is it?",
-    "Q11. A look in the crystal ball reveals an important part of your life. What do you see?",
+    'Q1. The door is locked. What are you going to do?',
+    'Q2. Which item would you choose in an unfamiliar room?',
+    'Q3. There are seven chairs and ten kids. What do you do?',
+    'Q4. In the morning, you are the person who says:',
+    'Q5. What are you most afraid of?',
+    'Q6. What class do you want to take the most in the world?',
+    'Q7. Do what is',
+    'Q8. Which animal is your perfect companion?',
+    'Q9. What describes you best?',
+    'Q10. You get the chance to take care of an animal of your choice. Which one is it?',
+    'Q11. A look in the crystal ball reveals an important part of your life. What do you see?',
   ]);
 
   const [optionA] = useState([
-    "Kick it down",
-    "Cape",
-    "The best seven of the lot can sit down",
+    'Kick it down',
+    'Cape',
+    'The best seven of the lot can sit down',
     "The sky is so beautiful! I'm really looking forward to today!",
-    "Discouragement",
-    "Flying",
-    "right",
-    "Owl",
+    'Discouragement',
+    'Flying',
+    'right',
+    'Owl',
     "I'm not fearless, but I'll muster up my courage to do what is right.",
-    "A baby dragon. It will stay small, right?",
-    "My family.",
+    'A baby dragon. It will stay small, right?',
+    'My family.',
   ]);
   const [optionB] = useState([
-    "Pick the lock",
-    "Crystal ball",
-    "Kill three",
-    "Why do you wake me up now and make noise?",
-    "Failure",
-    "Herbology",
-    "necessary",
-    "Lizard",
+    'Pick the lock',
+    'Crystal ball',
+    'Kill three',
+    'Why do you wake me up now and make noise?',
+    'Failure',
+    'Herbology',
+    'necessary',
+    'Lizard',
     "I mainly do what is best for myself and my closest friends. I don't care about others.",
-    "Anything that is potentially venomous. It will only bite my enemies anyways.",
-    "Fame and fortune. Mostly fame.",
+    'Anything that is potentially venomous. It will only bite my enemies anyways.',
+    'Fame and fortune. Mostly fame.',
   ]);
   const [optionC] = useState([
-    "Find the key",
-    "Compass",
-    "Bring three more chairs",
-    "What dream did I dream? Should I go back to sleep agian?",
-    "Stupidity",
-    "Potions",
-    "wise",
-    "Raven",
-    "I love to learn new things and I could spend hours in the library without getting bored.",
-    "A crow, an eagle or a raven. Such majestic and wise birds!",
-    "Progression and self-improvement.",
+    'Find the key',
+    'Compass',
+    'Bring three more chairs',
+    'What dream did I dream? Should I go back to sleep agian?',
+    'Stupidity',
+    'Potions',
+    'wise',
+    'Raven',
+    'I love to learn new things and I could spend hours in the library without getting bored.',
+    'A crow, an eagle or a raven. Such majestic and wise birds!',
+    'Progression and self-improvement.',
   ]);
   const [optionD] = useState([
-    "Knock",
-    "Diary",
-    "Have everyone stand",
-    "What I need now is warm tea in my favorite mug.",
-    "Lies",
-    "Defense Against the Dark Arts",
-    "kind",
-    "Dog",
+    'Knock',
+    'Diary',
+    'Have everyone stand',
+    'What I need now is warm tea in my favorite mug.',
+    'Lies',
+    'Defense Against the Dark Arts',
+    'kind',
+    'Dog',
     "I care a lot about how others feel and I'll comfort them if they need it.",
-    "A hippogryph (a mixture between a horse and an eagle). We can fly and enjoy the peaceful surroundings together.",
-    "Peace and harmony with nature.",
+    'A hippogryph (a mixture between a horse and an eagle). We can fly and enjoy the peaceful surroundings together.',
+    'Peace and harmony with nature.',
   ]);
 
   useEffect(() => {
@@ -94,8 +95,12 @@ function Quiz() {
 
   function SubmitModal() {
     return (
-      <p>
-        <input className="Quiz__gradientButton" type="submit" value="Show me my house!" />
+      <p style={{ fontFamily: 'Merriweather, serif' }}>
+        <input
+          className="Quiz__gradientButton"
+          type="submit"
+          value="Show me my house!"
+        />
       </p>
     );
   }
@@ -128,7 +133,7 @@ function Quiz() {
   }
 
   function QuizButtons() {
-    return(
+    return (
       <div>
         <div className="Quiz__radioButtonContainer">
           <button
@@ -141,7 +146,10 @@ function Quiz() {
               setAnswerA(answerA + 1);
               setClickedNumber(clickedNumber + 1);
             }}
-          >A. {optionA[clickedNumber]}</button>
+            style={{ fontFamily: 'Merriweather, serif' }}
+          >
+            A. {optionA[clickedNumber]}
+          </button>
         </div>
         <div className="Quiz__radioButtonContainer">
           <button
@@ -154,7 +162,10 @@ function Quiz() {
               setAnswerB(answerB + 1);
               setClickedNumber(clickedNumber + 1);
             }}
-          >B. {optionB[clickedNumber]}</button>
+            style={{ fontFamily: 'Merriweather, serif' }}
+          >
+            B. {optionB[clickedNumber]}
+          </button>
         </div>
         <div className="Quiz__radioButtonContainer">
           <button
@@ -167,7 +178,10 @@ function Quiz() {
               setAnswerC(answerC + 1);
               setClickedNumber(clickedNumber + 1);
             }}
-          >C. {optionC[clickedNumber]}</button>
+            style={{ fontFamily: 'Merriweather, serif' }}
+          >
+            C. {optionC[clickedNumber]}
+          </button>
         </div>
         <div className="Quiz__radioButtonContainer">
           <button
@@ -180,7 +194,10 @@ function Quiz() {
               setAnswerD(answerD + 1);
               setClickedNumber(clickedNumber + 1);
             }}
-          >D. {optionD[clickedNumber]}</button>
+            style={{ fontFamily: 'Merriweather, serif' }}
+          >
+            D. {optionD[clickedNumber]}
+          </button>
         </div>
       </div>
     );
@@ -188,24 +205,28 @@ function Quiz() {
 
   return (
     <div className="quiz-container">
-        <form
-          onSubmit={(event) => {
-            event.preventDefault();
-            handleSubmit();
-          }}
+      <form
+        onSubmit={(event) => {
+          event.preventDefault();
+          handleSubmit();
+        }}
+      >
+        <h2
+          className="Quiz__question"
+          style={{ fontFamily: 'Merriweather, serif' }}
         >
-          <h2 className="Quiz__question">{questions[clickedNumber]}</h2>
-          {/* test buttons */}  
-          {showQuizButtons === true ? <QuizButtons /> : null}
-          {showSubmit === true ? <SubmitModal /> : null}
-        </form>
-        {showResultA === true ? <Gryffindor /> : null}
-        {showResultB === true ? <Slytherin /> : null}
-        {showResultC === true ? <Ravenclaw /> : null}
-        {showResultD === true ? <Hufflepuff /> : null}
+          {questions[clickedNumber]}
+        </h2>
+        {/* test buttons */}
+        {showQuizButtons === true ? <QuizButtons /> : null}
+        {showSubmit === true ? <SubmitModal /> : null}
+      </form>
+      {showResultA === true ? <Gryffindor /> : null}
+      {showResultB === true ? <Slytherin /> : null}
+      {showResultC === true ? <Ravenclaw /> : null}
+      {showResultD === true ? <Hufflepuff /> : null}
     </div>
   );
 }
 
 export default Quiz;
-
